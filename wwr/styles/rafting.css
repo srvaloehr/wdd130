@@ -101,6 +101,14 @@ section img {
     height: auto;
     top: 600px;
 }
+footer {
+    all: unset;  
+    display: block;  
+    padding: 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: white;
+}
 
 footer{
     margin-top: 15px;
