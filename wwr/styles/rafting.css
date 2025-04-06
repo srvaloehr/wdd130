@@ -99,7 +99,6 @@ section img {
     display: inline;
     width: 20%;
     height: auto;
-    /* position: absolute; */
     top: 600px;
 }
 
@@ -109,6 +108,32 @@ footer{
     text-align: justify;
     clear: both;
     text-decoration: none;
+}
+footer {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 15px;
+    border-top: 1px solid var(--accent-1);
+    text-align: center; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer .Socials {
+    display: flex; 
+    gap: 10px; 
+}
+
+footer .Socials a {
+    display: block; 
+}
+
+footer img {
+    width: 30px; 
+    height: auto;
 }
 
 footer img {
@@ -144,6 +169,32 @@ section h2, section p {
     font-family: "Orbitron", sans-serif;
     font-weight: 600;
 }
+.adventure-gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.adventure-gallery figure {
+    margin: 0; 
+    text-align: center; 
+}
+
+.adventure-gallery img {
+    width: 200px; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.adventure-gallery figcaption {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.1rem; 
+    color: #333; 
+    margin-top: 5px; 
+}
+
 section p {
     text-align: center; 
     font-family: "Orbitron", sans-serif; 
@@ -151,27 +202,49 @@ section p {
     color: black; 
 }
 header {
-    display: flex; /* Use Flexbox layout */
-    justify-content: space-between; /* Align the logo on the left and the nav on the right */
-    align-items: center; /* Vertically center items */
-    padding: 10px; /* Optional: adjusts spacing within the header */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
 }
 
 header img {
-    width: 200px; /* You can adjust this as needed */
+    width: 200px; 
 }
 
 nav {
-    display: flex; /* Flexbox on the nav for inline layout */
+    display: flex; 
 }
 
 nav ul {
-    display: flex; /* Align list items horizontally */
-    list-style-type: none; /* Remove bullets */
+    display: flex; 
+    list-style-type: none; 
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin-right: 20px; /* Optional: adds spacing between the links */
+    margin-right: 20px; 
 }
+.history-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+.history-content img {
+    width: 300px; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.history-content p {
+    max-width: 400px; 
+    text-align: justify; 
+    font-family: "Oswald", sans-serif;
+    color: black; 
+}
+
