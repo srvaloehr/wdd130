@@ -59,7 +59,8 @@
   header img {
     width: 200px;
     border: 1px solid black;
-  }
+    margin-left: 60px;
+}
   
   /* Navigation */
   nav {
@@ -118,6 +119,13 @@
     width: 20%;
     margin: 2px;
     padding: 2px;
+  }
+  .map-frame {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 190px;
+    border: 0;
   }
   
   /* Main Content Images */
@@ -198,10 +206,12 @@
   .Inputs {
     background-color: black; /* light gray background */
     padding: 20px;
-    margin: 20px;
+    margin: 50px;
+    margin-top: 240px;
     border: 1px solid #ccc; /* light border */
     color: black; /* text color */
-  }
+    width: 700px;
+}
   
   .Inputs label {
     display: block; /* puts label on its own line */
@@ -213,8 +223,8 @@
   .Inputs input[type="text"],
   .Inputs input[type="email"],
   .Inputs textarea {
-    width: 100%; /* full width of the form box */
-    padding: 8px;
+    width: 80%; /* full width of the form box */
+    padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #999;
   }
