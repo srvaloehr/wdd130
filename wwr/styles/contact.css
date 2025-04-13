@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     text-decoration: none;
     color: white;
@@ -11,7 +10,7 @@
     --accent-2: #FF3A20;
   }
   
-  /* Typography */
+  
   body {
     font-family: "Oswald", sans-serif;
   }
@@ -48,7 +47,7 @@
     color: black;
   }
   
-  /* Header */
+ 
   header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -62,7 +61,7 @@
     margin-left: 60px;
 }
   
-  /* Navigation */
+
   nav {
     background-color: var(--secondary-color);
     padding: 40px;
@@ -85,7 +84,7 @@
     font-family: "Orbitron", sans-serif;
   }
   
-  /* Hero Section */
+
   .herodiv {
     margin: 10px auto;
     position: relative;
@@ -129,8 +128,7 @@
     margin-top: 100px;
     border: 0;
   }
-  
-  /* Main Content Images */
+
   main img {
     width: 100%;
     max-width: 1000px;
@@ -142,13 +140,13 @@
     display: block;
   }
   
-  /* Footer */
+
   footer {
     display: grid;
     grid-template-columns: 1fr auto;
     justify-items: center;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     background-color: var(--secondary-color);
     color: white;
     border-top: 1px solid var(--accent-1);
@@ -170,17 +168,17 @@
   }
   
   footer img {
-    width: 30px;
+    width: 60px;
     height: auto;
   }
   
-  /* Social Links */
+
   .sociallinks a {
     display: inline-block;
     text-decoration: none;
   }
   
-  /* Adventure Gallery */
+
   .adventure-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -206,17 +204,17 @@
     margin-top: 5px;
   }
   .Inputs {
-    background-color: black; /* light gray background */
+    background-color: black; 
     padding: 20px;
     margin: 50px;
     margin-top: 220px;
-    border: 1px solid #ccc; /* light border */
-    color: black; /* text color */
+    border: 1px solid #ccc; 
+    color: black; 
     width: 700px;
 }
   
   .Inputs label {
-    display: block; /* puts label on its own line */
+    display: block;
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -225,7 +223,7 @@
   .Inputs input[type="text"],
   .Inputs input[type="email"],
   .Inputs textarea {
-    width: 80%; /* full width of the form box */
+    width: 80%; 
     padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #999;
@@ -238,7 +236,7 @@
   
   .Inputs input[type="submit"],
   .Inputs button {
-    background-color: #FCBA04; /* yellow button */
+    background-color: #FCBA04; 
     color: black;
     padding: 10px 15px;
     border: none;
