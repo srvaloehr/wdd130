@@ -195,6 +195,45 @@
     color: #333;
     margin-top: 5px;
   }
+  .Inputs {
+    background-color: black; /* light gray background */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc; /* light border */
+    color: black; /* text color */
+  }
+  
+  .Inputs label {
+    display: block; /* puts label on its own line */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .Inputs input[type="text"],
+  .Inputs input[type="email"],
+  .Inputs textarea {
+    width: 100%; /* full width of the form box */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+  }
+  
+  .Inputs input[type="radio"],
+  .Inputs input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .Inputs input[type="submit"],
+  .Inputs button {
+    background-color: #FCBA04; /* yellow button */
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
   
 /* .history-content {
     display: flex; 
