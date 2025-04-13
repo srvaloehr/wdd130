@@ -26,12 +26,55 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/heroo.jpg" alt="In the act!">
-            <h1>White Water Rafting</h1>
+            <!-- <img src="images/heroo.jpg" alt="In the act!"> -->
+            <h1>Contact Us</h1>
             <article>
+                <p>Address: 5799 Bradbury Dr #5707, Salcha, AK 99714 </p>
+                <p>Phone: (480)-555-6161</p>
+                <p>Email: Extremeraft@wwr.com</p>
+                
                 <!-- <img src="images/smallfun.jpg" alt="White Water Rafting"> -->
                 <!-- <p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate quas debitis dolorum error sint nisi inventore dolores explicabo consectetur, possimus asperiores impedit, consequuntur voluptas facere soluta tempora perferendis quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate quas debitis dolorum error sint nisi inventore dolores explicabo consectetur, possimus asperiores impedit, consequuntur voluptas facere soluta tempora perferendis quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate quas debitis dolorum error sint nisi inventore dolores explicabo consectetur, possimus asperiores impedit, consequuntur voluptas facere soluta tempora perferendis quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate quas debitis dolorum error sint nisi inventore dolores explicabo consectetur, possimus asperiores impedit, consequuntur voluptas facere soluta tempora perferendis quam!</p> -->
             </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d885179.2037765498!2d-146.59662015553772!3d64.32159795621422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1744567932384!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="Inputs">
+            <section>
+                <form action="/submit" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label>
+                    
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label>
+                    
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+                    <!-- <p>Purpose of the message:</p>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br><br> -->
+                
+                    <button type="submit">Send Message</button>
+
+                    <input type="submit" value="Submit">
+                  </form>
+            </section>
         </div>
         <!-- <section>
             <h2>History</h2>
@@ -41,31 +84,31 @@
                 <p>Helmets made from real armadillos. The water is cold.</p>
             </div>
         </section> -->
-        <!-- <section>
-            <h2>Adventure Awaits You!</h2>
+        <section>
+            <h2>Employee members</h2>
             <div class="adventure-gallery">
             <figure>
-                <img src="images/raft1.jpg" alt="Scenic">
-                <figcaption>Scenic</figcaption>
+                <img src="images/arnold.webp" alt="Joe Shmo">
+                <figcaption>Joe Shmo</figcaption>
             </figure>
             <figure>
-                <img src="images/raft2.jpg" alt="Group">
-                <figcaption>Group Trip</figcaption>
+                <img src="images/rock.jpg" alt="Jane Bro">
+                <figcaption>Jane Bro</figcaption>
             </figure>
             <figure>
-                <img src="images/raft3.jpg" alt="Level 2">
-                <figcaption>Level 2</figcaption>
+                <img src="images/tom.jpg" alt="Ya Boi Paul">
+                <figcaption>Ya Boi Paul</figcaption>
             </figure>
-            <figure>
+            <!-- <figure>
                 <img src="images/raft4.jpg" alt="Level 3">
                 <figcaption>Level 3</figcaption>
             </figure>
             <figure>
                 <img src="images/raft5.jpg" alt="Can you Hang?">
                 <figcaption>Can You Hang?</figcaption>
-            </figure>
+            </figure> -->
             </div>
-        </section> -->
+        </section>
     </main>
     <footer>
         <p>&copy;2025 | Extreme Raft | Stephen Loehr </p>
