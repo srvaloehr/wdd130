@@ -170,6 +170,71 @@
     margin: 0 auto;
     display: block;
   }
+  /* General section styling */
+.trip-table-section {
+    padding: 20px;
+    background-color: #f0f8ff;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trip-table-section h2 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #FCBA04;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styling */
+  .trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .trip-table th,
+  .trip-table td {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .trip-table th {
+    background-color: #29339B;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .trip-table td {
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  /* Hover effect for table rows */
+  .trip-table tbody tr:hover {
+    background-color: #77B6EA;
+    color: white;
+  }
+  
+  /* Zebra-striping for rows */
+  .trip-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .trip-table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  /* Price column styling */
+  .trip-table td:last-child {
+    font-weight: bold;
+    color: #FCBA04;
+  }
   
 
   footer {
