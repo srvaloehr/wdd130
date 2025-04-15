@@ -121,37 +121,6 @@
     margin: 2px;
     padding: 2px;
   }
-  /* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-}
-
-.hero-section h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #0b3954;
-    font-size: 2.5rem;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.cta-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    display: inline-block;
-    margin-top: 20px;
-}
-
   .map-frame {
     float: right;
     margin-left: 20px;
@@ -234,19 +203,20 @@
     color: #333;
     margin-top: 5px;
   }
- /* Inputs Section */
-.Inputs {
+  .Inputs {
     background-color: black; 
     padding: 20px;
-    margin: 50px auto; /* Centers the form */
-    width: 700px;
-    border: 1px solid #ccc;
+    margin: 50px;
+    margin-top: 220px;
+    border: 1px solid #ccc; 
     color: black; 
-  }
+    width: 700px;
+}
   
   .Inputs label {
     display: block;
-    margin: 10px 0 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
   }
   
@@ -258,42 +228,56 @@
     margin-bottom: 10px;
     border: 1px solid #000000;
   }
-  
   .Inputs input[type="submit"],
-  .Inputs button,
-  .newsletter button {
-    background-color: var(--primary-color);
-    color: black;
-    padding: 12px 24px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+.Inputs button,
+.newsletter button {
+  background-color: var(--primary-color);
+  color: black;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Button hover effects */
-  .newsletter button:hover,
-  .Inputs input[type="submit"]:hover,
-  .Inputs button:hover {
-    background-color: var(--accent-2);
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  /* Ensure buttons in newsletter get priority */
-  .newsletter button {
+/*   
+.newsletter button:hover {
+  background-color: var(--accent-2);
+  color: white;
+  transform: scale(1.05);
+} */
+.newsletter button:hover,
+.Inputs input[type="submit"]:hover,
+.Inputs button:hover {
+  background-color: var(--accent-2);
+  color: white;
+  transform: scale(1.05);
+}
+.newsletter button {
     background-color: var(--accent-2) !important;
   }
   
-  /* Checkbox and radio button styling */
   .Inputs input[type="radio"],
   .Inputs input[type="checkbox"] {
     margin-right: 5px;
   }
   
-  /* Info Grid */
+  /* .Inputs input[type="submit"],
+  .Inputs button {
+    background-color: #FCBA04; 
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  } */
+  
   .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -302,11 +286,10 @@
     background-color: #f0f8ff;
   }
   
-  /* Info Card */
   .info-card {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -332,8 +315,6 @@
     color: #333;
     line-height: 1.6;
   }
-  
-  /* Why Choose Us Section */
   .why-choose-us {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -346,7 +327,7 @@
   .choose-image img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
   .choose-text h2 {
@@ -363,70 +344,8 @@
     line-height: 1.6;
   }
   
-  /* Trips Section */
-.trips-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.trips-section h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
-    color: #0b3954;
-    margin-bottom: 20px;
-}
-
-.trip-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
-
-.trip-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px;
-    text-align: center;
-    padding: 20px;
-}
-
-.trip-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.trip-card h4 {
-    font-family: 'Orbitron', sans-serif;
-    color: #0b3954;
-    margin-top: 10px;
-}
-
-.trip-card p {
-    font-size: 1rem;
-    color: #333;
-    margin: 10px 0;
-}
-
-.trip-card a {
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.trip-card a:hover {
-    background-color: var(--accent-2);
-}
-
+ 
+  
 /* .history-content {
     display: flex; 
     justify-content: center; 
