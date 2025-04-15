@@ -203,20 +203,19 @@
     color: #333;
     margin-top: 5px;
   }
-  .Inputs {
+ /* Inputs Section */
+.Inputs {
     background-color: black; 
     padding: 20px;
-    margin: 50px;
-    margin-top: 220px;
-    border: 1px solid #ccc; 
-    color: black; 
+    margin: 50px auto; /* Centers the form */
     width: 700px;
-}
+    border: 1px solid #ccc;
+    color: black; 
+  }
   
   .Inputs label {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
     font-weight: bold;
   }
   
@@ -226,22 +225,111 @@
     width: 80%; 
     padding: 5px;
     margin-bottom: 10px;
-    border: 1px solid #999;
+    border: 1px solid #000000;
   }
   
+  .Inputs input[type="submit"],
+  .Inputs button,
+  .newsletter button {
+    background-color: var(--primary-color);
+    color: black;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effects */
+  .newsletter button:hover,
+  .Inputs input[type="submit"]:hover,
+  .Inputs button:hover {
+    background-color: var(--accent-2);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Ensure buttons in newsletter get priority */
+  .newsletter button {
+    background-color: var(--accent-2) !important;
+  }
+  
+  /* Checkbox and radio button styling */
   .Inputs input[type="radio"],
   .Inputs input[type="checkbox"] {
     margin-right: 5px;
   }
   
-  .Inputs input[type="submit"],
-  .Inputs button {
-    background-color: #FCBA04; 
-    color: black;
-    padding: 10px 15px;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
+  /* Info Grid */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f0f8ff;
+  }
+  
+  /* Info Card */
+  .info-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-content {
+    padding: 1rem;
+  }
+  
+  .info-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #0b3954;
+    margin-top: 0;
+  }
+  
+  .info-content p {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+  }
+  
+  .choose-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .choose-text h2 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .choose-text p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
   }
   
   
