@@ -130,7 +130,7 @@ footer .Socials a {
 }
 
 footer img {
-    width: 30px;         
+    width: 60px;         
     height: auto;
 }
 
@@ -197,12 +197,14 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 
 header img {
     width: 200px; 
+    border: 1px solid black;
+    margin-left: 60px;
 }
 
 nav {
